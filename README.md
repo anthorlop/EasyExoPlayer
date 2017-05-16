@@ -8,7 +8,7 @@ repositories {
     maven { url 'https://github.com/anthorlop/mvn-android/raw/master/' }
 }
 
-// GoogleSearchImageParser gradle dependencies
+// EasyExoPlayer gradle dependencies
 compile 'es.lombrinus.projects.mods:EasyExoPlayer:1.0'
 ```
 
