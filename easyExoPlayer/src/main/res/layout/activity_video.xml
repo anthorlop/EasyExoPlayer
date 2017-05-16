@@ -1,0 +1,16 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/activity_video_lay"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/video_fragment"
+        android:name="es.lombrinus.project.mods.video.EasyVideoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"/>
+
+</RelativeLayout>

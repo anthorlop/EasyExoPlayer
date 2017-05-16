@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video_error_tittle_text">¡Oh, no!</string>
+    <string name="video_error_text">Ha ocurrido un problema con la carga del vídeo.</string>
+
+    <string name="dailymotion_image">http://www.dailymotion.com/thumbnail/video/%1$s</string>
+    <string name="dailymotion_error">No se puede reproducir el video</string>
+</resources>

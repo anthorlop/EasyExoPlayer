@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="video_error_gris_claro">#f1f1f1</color>
+    <color name="video_error_gris">#737373</color>
+    <color name="video_error_salmon">#f05a5c</color>
+
+    <color name="dailymotion_color">#0066CC</color>
+    <color name="alpha_black">#7f000000</color>
+
+    <color name="ue_controller_bg">#FFFFFF</color>
+    <color name="ue_controller_items">#000</color>
+    <color name="ue_controller_buffered">#6699CC</color>
+    <color name="ue_controller_bar_marker">#3366CC</color>
+</resources>

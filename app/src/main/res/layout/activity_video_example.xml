@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#444444">
+
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOP TEXT"
+                android:textColor="@color/abc_secondary_text_material_dark"/>
+
+            <FrameLayout
+                android:id="@+id/video_fragment"
+                android:name="es.lombrinus.project.mods.video.EasyVideoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/texto1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/video_fragment"
+                android:text="BOTTOM TEXT"
+                android:textColor="@color/abc_secondary_text_material_dark"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

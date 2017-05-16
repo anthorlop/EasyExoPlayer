@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="EasyVideoView">
+        <attr name="autoplay" format="boolean"/>
+        <attr name="show_controls" format="boolean"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="UEIMAPreRollVideoView">-->
+    <!--<attr name="skip_add_text" format="string"/>-->
+    <!--</declare-styleable>-->
+
+</resources>
