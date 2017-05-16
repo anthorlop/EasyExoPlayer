@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignBottom="@+id/video_error_text"
-        android:background="@color/video_error_salmon"
+        android:background="@color/video_error_bg"
         android:padding="@dimen/video_error_triple_padding"
         android:src="@drawable/ic_warning"/>
 
@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/video_error_exclamacion"
-        android:background="@color/video_error_gris_claro"
+        android:background="@color/video_error_img_bg"
         android:orientation="vertical"
         android:padding="@dimen/video_error_padding">
 
@@ -32,7 +32,7 @@
             android:padding="@dimen/video_error_padding"
             android:paddingBottom="@dimen/video_error_double_padding"
             android:text="@string/video_error_tittle_text"
-            android:textColor="@color/video_error_salmon"
+            android:textColor="@color/video_error_bg"
             android:textSize="24sp"/>
 
         <TextView
@@ -43,7 +43,7 @@
             android:padding="@dimen/video_error_padding"
             android:paddingTop="@dimen/video_error_double_padding"
             android:text="@string/video_error_text"
-            android:textColor="@color/video_error_gris"
+            android:textColor="@color/video_error_text"
             android:textSize="16sp"/>
     </LinearLayout>
 

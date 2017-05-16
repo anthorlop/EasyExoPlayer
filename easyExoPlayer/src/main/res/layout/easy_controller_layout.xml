@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:minHeight="56dp"
     android:id="@+id/easy_controllers"
-    android:background="@color/ue_controller_bg">
+    android:background="@color/e_controller_bg">
 
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:src="@drawable/ue_controller_play"
-            android:tint="@color/ue_controller_items"
+            android:tint="@color/e_controller_items"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"/>
 
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:src="@drawable/ue_controller_pause"
-            android:tint="@color/ue_controller_items"
+            android:tint="@color/e_controller_items"
             android:visibility="gone"
             android:layout_alignTop="@+id/button"
             android:layout_toRightOf="@+id/button"/>
@@ -84,7 +84,7 @@
                 android:layout_centerVertical="true"
                 android:text="-"
                 android:textSize="16dp"
-                android:textColor="@color/ue_controller_items"
+                android:textColor="@color/e_controller_items"
                 android:layout_marginRight="8dp"/>
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_centerVertical="true"
                 android:text="/"
                 android:textSize="16dp"
-                android:textColor="@color/ue_controller_items"/>
+                android:textColor="@color/e_controller_items"/>
 
             <TextView
                 android:id="@+id/actualPosition"
@@ -105,17 +105,17 @@
                 android:layout_marginLeft="8dp"
                 android:text="-"
                 android:textSize="16dp"
-                android:textColor="@color/ue_controller_items"
+                android:textColor="@color/e_controller_items"
                 android:layout_toLeftOf="@id/separator"/>
 
             <com.google.android.exoplayer2.ui.DefaultTimeBar
                 android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="26dp"
-                app:played_color="@color/ue_controller_bar_marker"
-                app:buffered_color="@color/ue_controller_buffered"
+                app:played_color="@color/e_controller_bar"
+                app:buffered_color="@color/e_controller_buffered"
                 android:layout_toLeftOf="@id/actualPosition"
-                app:ad_marker_color="@color/ue_controller_bar_marker"/>
+                app:ad_marker_color="@color/e_controller_bar"/>
         </RelativeLayout>
 
     </RelativeLayout>

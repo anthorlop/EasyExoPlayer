@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="video_error_bg">#f1f1f1</color>
-    <color name="video_error_text">#737373</color>
+    <color name="video_error_text">#CCCCCC</color>
     <color name="video_error_img_bg">#f05a5c</color>
 
     <color name="dailymotion_color">#0066CC</color>

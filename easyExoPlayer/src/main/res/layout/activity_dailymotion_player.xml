@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="es.lombrinus.projects.mods.videos.dailymotion.DailymotionVideoActivity"
-    android:background="@color/alpha_black">
+    android:background="@color/dailymotion_bg">
 
     <RelativeLayout
         android:layout_width="match_parent"
