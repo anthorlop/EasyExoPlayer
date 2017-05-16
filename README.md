@@ -21,6 +21,7 @@ compile 'es.lombrinus.projects.mods:EasyExoPlayer:1.0'
         startActivity(i);
 
 ```
+<img src="https://github.com/anthorlop/EasyExoPlayer/blob/master/eep_a.jpeg" width="350"/> <img src="https://github.com/anthorlop/EasyExoPlayer/blob/master/eep_b.jpeg" width="350"/>
 
 ## Customization
 
