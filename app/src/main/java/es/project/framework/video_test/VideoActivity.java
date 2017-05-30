@@ -10,9 +10,6 @@ import es.lombrinus.projects.mods.videos.EasyVideoFragment;
 public class VideoActivity extends AppCompatActivity
 {
     private static String VIDEO_FRAGMENT_TAG = "video_fragment_tag";
-    public static String ARG_URL_VIDEO = "url_video";
-    public static String ARG_URL_ADS = "url_ads";
-    public static String ARG_BACKGROUND_COLOR = "arg_background_color";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,7 +23,7 @@ public class VideoActivity extends AppCompatActivity
 
         if (i != null && eVideoFragment == null)
         {
-            eVideoFragment = EasyVideoFragment.newInstance(i.getStringExtra(ARG_URL_VIDEO), i.getStringExtra(ARG_URL_ADS), true, false, i.getStringExtra(ARG_BACKGROUND_COLOR));
+            eVideoFragment = EasyVideoFragment.newInstance(i.getStringExtra(EasyVideoFragment.ARG_VIDEO_URL), i.getStringExtra(EasyVideoFragment.ARG_ADS_URL), true, false, i.getStringExtra(EasyVideoFragment.ARG_BACKGROUND_COLOR));
             getSupportFragmentManager().beginTransaction().replace(es.lombrinus.projects.mods.videos.R.id.video_fragment, eVideoFragment, VIDEO_FRAGMENT_TAG).commitAllowingStateLoss();
         }
     }
