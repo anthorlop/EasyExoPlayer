@@ -13,6 +13,9 @@ compile 'es.lombrinus.projects.mods:EasyExoPlayer:1.0'
 ```
 
 ## Playing video
+
+### Fullscreen
+
 ```java
 
         Intent i = new Intent(getApplicationContext(), EasyVideoActivity.class);
@@ -21,6 +24,35 @@ compile 'es.lombrinus.projects.mods:EasyExoPlayer:1.0'
         startActivity(i);
 
 ```
+
+### Embedded
+
+Layout:
+```xml
+
+    <FrameLayout
+        android:id="@+id/video_fragment"
+        android:name="es.lombrinus.project.mods.video.EasyVideoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+```
+
+Activity:
+```java
+        // OnCreate( ...
+        Intent i = getIntent();
+
+        EasyVideoFragment eVideoFragment = (EasyVideoFragment) getSupportFragmentManager().findFragmentByTag(VIDEO_FRAGMENT_TAG);
+
+        if (i != null && eVideoFragment == null)
+        {
+            eVideoFragment = EasyVideoFragment.newInstance(i.getStringExtra(EasyVideoFragment.ARG_VIDEO_URL), i.getStringExtra(EasyVideoFragment.ARG_ADS_URL), true, false, i.getStringExtra(EasyVideoFragment.ARG_BACKGROUND_COLOR));
+            getSupportFragmentManager().beginTransaction().replace(es.lombrinus.projects.mods.videos.R.id.video_fragment, eVideoFragment, VIDEO_FRAGMENT_TAG).commitAllowingStateLoss();
+        }
+
+```
+
 <img src="https://github.com/anthorlop/EasyExoPlayer/blob/master/eep_a.jpeg" width="350"/> <img src="https://github.com/anthorlop/EasyExoPlayer/blob/master/eep_b.jpeg" width="350"/>
 
 ## Customization
